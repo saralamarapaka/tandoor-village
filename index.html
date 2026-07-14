@@ -1,1 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>NAGARKURNOOL DISTRICT - TADOOR MANDAL</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+background:#eef3f8;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#0b5394;
+padding:15px 25px;
+color:#fff;
+box-shadow:0 2px 8px rgba(0,0,0,.25);
+}
+
+.logo{
+width:70px;
+height:70px;
+object-fit:contain;
+}
+
+.title{
+text-align:center;
+flex:1;
+}
+
+.title h1{
+font-size:30px;
+margin-bottom:5px;
+}
+
+.title h2{
+font-size:18px;
+font-weight:normal;
+}
+
+.search-box{
+width:95%;
+max-width:800px;
+margin:20px auto;
+}
+
+.search-box input{
+width:100%;
+padding:14px;
+font-size:17px;
+border:1px solid #ccc;
+border-radius:10px;
+outline:none;
+}
+
+.container{
+width:95%;
+max-width:1100px;
+margin:auto;
+padding-bottom:40px;
+}
+
+.place{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#fff;
+padding:15px;
+margin-bottom:15px;
+border-radius:10px;
+box-shadow:0 2px 6px rgba(0,0,0,.15);
+}
+
+.left{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.icon{
+width:55px;
+height:55px;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:50%;
+background:#dbeeff;
+font-size:28px;
+}
+
+.info h3{
+color:#0b5394;
+margin-bottom:5px;
+}
+
+.info p{
+color:#666;
+}
+
+.open-btn{
+background:#0b5394;
+color:#fff;
+padding:10px 18px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.open-btn:hover{
+background:#1565c0;
+}
+
+footer{
+background:#0b5394;
+color:#fff;
+text-align:center;
+padding:15px;
+margin-top:30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<img src="ou-logo.png" alt="OU Logo" class="logo">
+
+<div class="title">
+<h1>NAGARKURNOOL DISTRICT</h1>
+<h2>TADOOR MANDAL</h2>
+</div>
+
+<img src="otbi-logo.png" alt="OTBI Logo" class="logo">
+
+</header>
+
+<div class="search-box">
+<input
+type="text"
+id="search"
+placeholder="Search Place..."
+onkeyup="searchPlaces()">
+</div>
+
+<div class="container" id="places">
+  <!-- 1 -->
+<div class="place">
+  <div class="left">
+    <div class="icon">🏘️</div>
+    <div class="info">
+      <h3>NAG - TADOOR</h3>
+      <p>Village</p>
+    </div>
+  </div>
+  <a class="open-btn" href="https://www.google.com/maps?q=16.52166,78.3619" target="_blank">Open Map</a>
+</div>
+
+<!-- 2 -->
+<div class="place">
+  <div class="left">
+    <div class="icon">🏫</div>
+    <div class="info">
+      <h3>NAG - TAD - ZPHS</h3>
+      <p>School</p>
+    </div>
+  </div>
+  <a class="open-btn" href="https://www.google.com/maps?q=16.52084,78.36071" target="_blank">Open Map</a>
+</div>
+
+<!-- 3 -->
+<div class="place">
+  <div class="left">
+    <div class="icon">🏨</div>
+    <div class="info">
+      <h3>NAG - TAD - SHRI RUCHI HOTEL</h3>
+      <p>Hotel</p>
+    </div>
+  </div>
+  <a class="open-btn" href="https://www.google.com/maps?q=16.52138,78.36139" target="_blank">Open Map</a>
+</div>
+
+<!-- 4 -->
+<div class="place">
+  <div class="left">
+    <div class="icon">⛽</div>
+    <div class="info">
+      <h3>NAG - TAD - Petrol Bunk</h3>
+      <p>Petrol Pump</p>
+    </div>
+  </div>
+  <a class="open-btn" href="https://www.google.com/maps?q=16.51869,78.35953" target="_blank">Open Map</a>
+</div>
+
+<!-- 5 -->
+<div class="place">
+  <div class="left">
+    <div class="icon">🛕</div>
+    <div class="info">
+      <h3>NAG - TAD - Pochamma Temple</h3>
+      <p>Temple</p>
+    </div>
+  </div>
+  <a class="open-btn" href="https://www.google.com/maps?q=16.51712,78.36003" target="_blank">Open Map</a>
+</div>
+
+<!-- 6 -->
+<div class="place">
+  <div class="left">
+    <div class="icon">🏨</div>
+    <div class="info">
+      <h3>NAG - TAD - Venkatramulu Hotel Tadoor</h3>
+      <p>Hotel</p>
+    </div>
+  </div>
+  <a class="open-btn" href="https://www.google.com/maps?q=16.52397,78.36238" target="_blank">Open Map</a>
+</div>
+
+<!-- 7 -->
+<div class="place">
+  <div class="left">
+    <div class="icon">🛕</div>
+    <div class="info">
+      <h3>NAG - TAD - Hanuman Mandir</h3>
+      <p>Temple</p>
+    </div>
+  </div>
+  <a class="open-btn" href="https://www.google.com/maps?q=16.52139,78.3628" target="_blank">Open Map</a>
+</div>
+
+<!-- 8 -->
+<div class="place">
+  <div class="left">
+    <div class="icon">🏦</div>
+    <div class="info">
+      <h3>NAG - TAD - Union Bank of India</h3>
+      <p>Bank</p>
+    </div>
+  </div>
+  <a class="open-btn" href="https://www.google.com/maps?q=16.5233,78.36199" target="_blank">Open Map</a>
+</div>
+
+<!-- 9 -->
+<div class="place">
+  <div class="left">
+    <div class="icon">🏦</div>
+    <div class="info">
+      <h3>NAG - TAD - APGVB Tadoor Branch</h3>
+      <p>Bank</p>
+    </div>
+  </div>
+  <a class="open-btn" href="https://www.google.com/maps?q=16.52005,78.36058" target="_blank">Open Map</a>
+</div>
+
+<!-- 10 -->
+<div class="place">
+  <div class="left">
+    <div class="icon">🛍️</div>
+    <div class="info">
+      <h3>NAG - TAD - Chandana Brothers</h3>
+      <p>Shopping Mall</p>
+    </div>
+  </div>
+  <a class="open-btn" href="https://www.google.com/maps?q=16.51817,78.35983" target="_blank">Open Map</a>
+</div>
+
+<!-- 11 -->
+<div class="place">
+  <div class="left">
+    <div class="icon">🏛️</div>
+    <div class="info">
+      <h3>NAG - TAD - Mandal Revenue Office</h3>
+      <p>Government Office</p>
+    </div>
+  </div>
+  <a class="open-btn" href="https://www.google.com/maps?q=16.5258,78.36289" target="_blank">Open Map</a>
+</div>
+
+<!-- 12 -->
+<div class="place">
+  <div class="left">
+    <div class="icon">🌾</div>
+    <div class="info">
+      <h3>NAG - TAD - S P R Agriculture</h3>
+      <p>Agriculture Office</p>
+    </div>
+  </div>
+  <a class="open-btn" href="https://www.google.com/maps?q=16.50829,78.34872" target="_blank">Open Map</a>
+</div>
+
+<!-- 13 -->
+<div class="place">
+  <div class="left">
+    <div class="icon">📍</div>
+    <div class="info">
+      <h3>NAG - TAD - Korupala Mallesh Mudhiraj</h3>
+      <p>Landmark</p>
+    </div>
+  </div>
+  <a class="open-btn" href="https://www.google.com/maps?q=16.51878,78.36066" target="_blank">Open Map</a>
+</div>
+
+<!-- 14 -->
+<div class="place">
+  <div class="left">
+    <div class="icon">⛪</div>
+    <div class="info">
+      <h3>NAG - TAD - Yesu Prarthana Mandiram</h3>
+      <p>Church</p>
+    </div>
+  </div>
+  <a class="open-btn" href="https://www.google.com/maps?q=16.51238,78.3609" target="_blank">Open Map</a>
+</div>
+
+<!-- 15 -->
+<div class="place">
+  <div class="left">
+    <div class="icon">🛕</div>
+    <div class="info">
+      <h3>NAG - TAD - Arimayala Swamy Temple</h3>
+      <p>Temple</p>
+    </div>
+  </div>
+  <a class="open-btn" href="https://www.google.com/maps?q=16.53094,78.3716" target="_blank">Open Map</a>
+</div>
+</div>
+
+<footer>
+<p>© 2026 Nagarkurnool District - Tadoor Mandal</p>
+<p>Developed using OU & OTBI Project Template</p>
+</footer>
+
+<script>
+
+function searchPlaces(){
+
+let input=document.getElementById("search").value.toLowerCase();
+let places=document.getElementsByClassName("place");
+
+for(let i=0;i<places.length;i++){
+
+let text=places[i].innerText.toLowerCase();
+
+if(text.indexOf(input)>-1){
+places[i].style.display="flex";
+}else{
+places[i].style.display="none";
+}
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
